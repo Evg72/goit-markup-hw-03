@@ -1,0 +1,206 @@
+/* цвет основного текста #212121; */
+/* вторичный цвет текста #757575;*/
+/* белый #FFFFFF*/
+/* вторичный цвет фона F5F4FA*/
+/* акцент #2196F3*/
+
+body {
+  background-color: #ffffff;
+  color: #212121;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+}
+
+a {
+  font-style: normal;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.header-btn {
+  font-size: 16px;
+  line-height: 30px;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.secondary-btn {
+  font-family: inherit;
+}
+.secondary-btn {
+  width: 145px;
+  height: 38px;
+  left: 712px;
+  top: 174px;
+  font-size: 16px;
+  line-height: 1.62;
+  color: #ffffff;
+}
+
+/*Секція хедер*/
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.hero {
+  background-color: #ffffff;
+}
+
+.logo-title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #212121;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #2196f3;
+}
+
+/* Sait-nav */
+
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: #2196f3;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+
+/* Auth-nav */
+.auth-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: #2196f3;
+}
+
+/* Секция уникальный контент*/
+.section-title .section-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36x;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #2f303a;
+}
+/*Секция особенности*/
+.section-list .text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.section-list .work {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*Секция Чем мы занимаемся*/
+.work-list .work,
+.tims .work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: #212121;
+}
+/*Команда*/
+
+.tims {
+  background: #f5f4fa;
+}
+.tims .list {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #212121;
+}
+
+.tims .title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: #757575;
+}
+
+/*Футер*/
+
+.futer {
+  background-color: #212121;
+}
+
+.logo .color {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/* Address list  */
+
+.address .link:hover,
+.address .link:focus {
+  color: #2196f3;
+}
+.futer .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.futer .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+/*Портфолио*/
+.cont-work .work-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.cont-work .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #757575;
+}
