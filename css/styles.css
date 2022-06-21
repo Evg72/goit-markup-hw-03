@@ -190,6 +190,7 @@ a {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 280px;
+  margin-bottom: 94px;
 }
 
 .section-text {
@@ -207,7 +208,15 @@ a {
 }
 
 /*Секция особенности*/
-.section-list .text {
+.section-list {
+  display: flex;
+  margin-left: -27px;
+}
+.section-list-text {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 27px;
+}
+tion-list .text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -223,6 +232,7 @@ a {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 /*Секция Чем мы занимаемся*/
 .work-list .work {
   font-weight: 700;
