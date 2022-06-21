@@ -4,11 +4,42 @@
 /* вторичный цвет фона F5F4FA*/
 /* акцент #2196F3*/
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 body {
   background-color: #ffffff;
   color: #212121;
   font-family: Roboto, sans-serif;
   font-style: normal;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  outline: 2px solid green;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 a {
@@ -18,30 +49,46 @@ a {
 .btn {
   cursor: pointer;
   font-family: inherit;
+  border-radius: 4px;
 }
 
 .header-btn {
+  font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.header-btn {
   width: 200px;
   height: 50px;
   left: 700px;
   top: 430px;
-  color: #ffffff;
-  background-color: #2196f3;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: inherit;
 }
 
 .secondary-btn {
   font-family: inherit;
 }
 .secondary-btn {
-  width: 145px;
-  height: 38px;
-  left: 712px;
-  top: 174px;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.62;
-  color: #ffffff;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  border: inherit;
+}
+.secondary-btn {
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
 }
 
 /*Секція хедер*/
@@ -55,28 +102,54 @@ a {
 .hero {
   background-color: #ffffff;
 }
+.header-logo {
+  display: block;
 
-.logo-title {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #212121;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 93px;
+  margin-left: 0;
 }
 
 .logo {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #2196f3;
+}
+
+.logo-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
 /* Sait-nav */
 
+.header-conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.heder-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
   letter-spacing: 0.02em;
+
   color: #212121;
 }
 
@@ -89,37 +162,52 @@ a {
 }
 
 /* Auth-nav */
+
 .auth-nav .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: #757575;
+}
+
+.header-tel {
+  margin-left: 50px;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
   color: #2196f3;
 }
-
+.auth-nav {
+  margin-left: auto;
+}
 /* Секция уникальный контент*/
-.section-title .section-text {
+.section-title {
+  background-color: #2f303a;
+}
+
+.section-text {
+  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.36x;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #2f303a;
 }
+
 /*Секция особенности*/
 .section-list .text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: #212121;
 }
+
 .section-list .work {
   font-weight: 400;
   font-size: 14px;
@@ -128,23 +216,35 @@ a {
   color: #757575;
 }
 /*Секция Чем мы занимаемся*/
-.work-list .work,
-.tims .work {
+.work-list .work {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
+
+  letter-spacing: 0.03em;
   color: #212121;
 }
+
 /*Команда*/
 
 .tims {
   background: #f5f4fa;
 }
+
+.tims .work {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+
+  color: #212121;
+}
+
 .tims .list {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -152,6 +252,8 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
+
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -161,7 +263,17 @@ a {
   background-color: #212121;
 }
 
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
 .logo .color {
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;

@@ -11,30 +11,43 @@
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="page">
     <!--Секция хедер-->
     <header class="hero">
-      <a href="./index.html" class="logo"
-        ><span class="logo">Web</span><span class="logo-title">Studio</span>
-      </a>
-      <nav>
-        <ul class="site-nav list">
-          <li>
-            <a href="Студия" class="link current">Студия</a>
-          </li>
-          <li>
-            <a href="portfolio.html" class="link">Портфолио</a>
-          </li>
-          <li>
-            <a href="Контакты" class="link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="auth-nav list">
-        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+      <div class="conteiner header-conteiner">
+        <a class="header-logo" href="./index.html" class="logo"
+          ><span class="logo">Web</span><span class="logo-title">Studio</span>
+        </a>
+        <nav class="heder-nav">
+          <ul class="site-nav list">
+            <li class="heder-list-item">
+              <a href="Студия" class="link current">Студия</a>
+            </li>
+            <li class="heder-list-item">
+              <a href="portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="heder-list-item">
+              <a href="Контакты" class="link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="auth-nav list">
+          <a href="mailto:info@devstudio.com" class="header-adress link"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="header-tel link"
+            >+38 096 111 11 11</a
+          >
+        </div>
       </div>
     </header>
     <!--Блок уникального контента-->
@@ -45,36 +58,38 @@
       </section>
       <!--Особенности-->
       <section class="section">
-        <ul class="section-list">
-          <li>
-            <h3 class="text">Внимание к деталям</h3>
-            <p class="work">
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3 class="text">Пунктуальность</h3>
-            <p class="work">
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3 class="text">Планирование</h3>
-            <p class="work">
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3 class="text">Современные технологии</h3>
-            <p class="work">
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <ul class="section-list">
+            <li>
+              <h3 class="text">Внимание к деталям</h3>
+              <p class="work">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="text">Пунктуальность</h3>
+              <p class="work">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="text">Планирование</h3>
+              <p class="work">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="text">Современные технологии</h3>
+              <p class="work">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!--Чем мы занимаемся-->
       <section class="work-list">
