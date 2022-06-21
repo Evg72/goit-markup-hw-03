@@ -190,7 +190,6 @@ a {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 280px;
-  margin-bottom: 94px;
 }
 
 .section-text {
@@ -208,15 +207,18 @@ a {
 }
 
 /*Секция особенности*/
-.section-list {
+.section-conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section-list-bloc {
   display: flex;
-  margin-left: -27px;
+}
+.section-list-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .section-list-text {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 27px;
-}
-tion-list .text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -225,7 +227,7 @@ tion-list .text {
   color: #212121;
 }
 
-.section-list .work {
+.section-list-work {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
@@ -234,11 +236,24 @@ tion-list .text {
 }
 
 /*Секция Чем мы занимаемся*/
-.work-list .work {
+.work-conteiner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-list-item {
+  display: flex;
+  margin-left: -30px;
+}
+.work-list-box {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+.work-list-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
