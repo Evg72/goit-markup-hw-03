@@ -213,6 +213,7 @@ a {
 }
 .section-list-bloc {
   display: flex;
+  margin-left: -30px;
 }
 .section-list-item {
   flex-basis: calc(100% / 4 - 30px);
@@ -259,43 +260,59 @@ a {
 }
 
 /*Команда*/
-
-.tims {
+.conteiner-tims {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.tims-work-comands {
   background: #f5f4fa;
 }
-
-.tims .work {
+.tims-work-list {
+  display: flex;
+  margin-left: -30px;
+}
+.tims-work-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+}
+.tims-work-name {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-
+  text-align: center;
   color: #212121;
 }
 
-.tims .list {
+.tims-list-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-
+  text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
-.tims .title {
+.tims-list-title {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-
+  text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
 /*Футер*/
-
+.futer-conteiner {
+}
 .futer {
   background-color: #212121;
 }
-
+.logo {
+  width: 145px;
+  height: 31px;
+  left: 758px;
+  top: 2149px;
+}
 .logo {
   font-family: "Raleway";
   font-weight: 700;
