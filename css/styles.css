@@ -4,6 +4,10 @@
 /* вторичный цвет фона F5F4FA*/
 /* акцент #2196F3*/
 
+/* others*/
+--items: 3;
+--indent: 30px;
+
 h1,
 h2,
 h3,
@@ -32,8 +36,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 2px solid green;
 }
 
 ul {
@@ -86,6 +88,7 @@ a {
   letter-spacing: 0.03em;
   color: #212121;
   border: inherit;
+  border-color: #4792d0;
 }
 .secondary-btn {
   width: 128px;
@@ -214,6 +217,7 @@ a {
 .section-list-bloc {
   display: flex;
   margin-left: -30px;
+  align-items: center;
 }
 .section-list-item {
   flex-basis: calc(100% / 4 - 30px);
@@ -245,6 +249,7 @@ a {
 .work-list-item {
   display: flex;
   margin-left: -30px;
+  align-items: center;
 }
 .work-list-box {
   flex-basis: calc(100% / 3 - 30px);
@@ -271,9 +276,23 @@ a {
   display: flex;
   margin-left: -30px;
 }
+
 .tims-work-item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+
+  border: inherit;
+  border: transparent;
+  width: 270px;
+  height: 368px;
+  left: 1115px;
+  top: 1635px;
+
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .tims-work-name {
   font-weight: 700;
@@ -284,6 +303,7 @@ a {
 }
 
 .tims-list-text {
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -293,6 +313,7 @@ a {
 }
 
 .tims-list-title {
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -303,16 +324,13 @@ a {
 
 /*Футер*/
 .futer-conteiner {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .futer {
   background-color: #212121;
 }
-.logo {
-  width: 145px;
-  height: 31px;
-  left: 758px;
-  top: 2149px;
-}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -337,6 +355,10 @@ a {
 .address .link:focus {
   color: #2196f3;
 }
+
+.futer-adress-item {
+  padding-top: 20px;
+}
 .futer .link {
   font-weight: 400;
   font-size: 14px;
@@ -353,16 +375,58 @@ a {
 }
 
 /*Портфолио*/
-.cont-work .work-title {
+.cont-work-list {
+  padding-bottom: 94px;
+}
+
+.cont-work-item {
+  margin-bottom: 30px;
+  background: #ffffff;
+  box-sizing: border-box;
+  width: 370px;
+  height: 404px;
+  left: 1015px;
+  top: 262px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.cont-work-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.03em;
   color: #212121;
 }
-.cont-work .text {
+.cont-work-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   color: #757575;
+}
+
+.nav-btn-item {
+  display: flex;
+  justify-content: center;
+  margin-right: 8px;
+  padding-bottom: 34px;
+  padding-top: 94px;
+}
+
+/* Контент */
+.cont-work-list {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--indent) / 2);
+}
+
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * var(--items)) / var (--items));
+  margin: calc(var(--indent) / 2);
 }
