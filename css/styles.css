@@ -91,10 +91,12 @@ a {
   border-color: #4792d0;
 }
 .secondary-btn {
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  margin: 8px;
+  margin-bottom: 50px;
 }
 
 /*Секція хедер*/
@@ -106,13 +108,15 @@ a {
 }
 
 .hero {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  border: 1px solid #ececec;
+
   background-color: #ffffff;
 }
 .header-logo {
   display: block;
-
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-right: 93px;
   margin-left: 0;
 }
@@ -192,14 +196,14 @@ a {
 .section-title {
   background-color: #2f303a;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 
 .section-text {
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
-
+  letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -210,11 +214,11 @@ a {
 }
 
 /*Секция особенности*/
-.section-conteiner {
+
+.section-list-bloc {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.section-list-bloc {
+
   display: flex;
   margin-left: -30px;
   align-items: center;
@@ -241,11 +245,10 @@ a {
 }
 
 /*Секция Чем мы занимаемся*/
-.work-conteiner {
-  padding-top: 94px;
+
+.work-list {
   padding-bottom: 94px;
 }
-
 .work-list-item {
   display: flex;
   margin-left: -30px;
@@ -256,6 +259,7 @@ a {
   margin-left: 30px;
 }
 .work-list-title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -265,11 +269,11 @@ a {
 }
 
 /*Команда*/
-.conteiner-tims {
+
+.tims-work-comands {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-.tims-work-comands {
+
   background: #f5f4fa;
 }
 .tims-work-list {
@@ -295,15 +299,20 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 .tims-work-name {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
 }
-
-.tims-list-text {
+.tims-prof-name {
   padding-top: 30px;
+  padding-bottom: 30px;
+}
+.tims-list-text {
+  margin-top: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -313,7 +322,6 @@ a {
 }
 
 .tims-list-title {
-  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -323,11 +331,11 @@ a {
 }
 
 /*Футер*/
-.futer-conteiner {
-  padding-bottom: 94px;
-  padding-top: 94px;
-}
+
 .futer {
+  padding-bottom: 60px;
+  padding-top: 60px;
+
   background-color: #212121;
 }
 
@@ -350,14 +358,16 @@ a {
 }
 
 /* Address list  */
-
+.address {
+  margin-top: 20px;
+}
 .address .link:hover,
 .address .link:focus {
   color: #2196f3;
 }
 
 .futer-adress-item {
-  padding-top: 20px;
+  margin-top: 9px;
 }
 .futer .link {
   font-weight: 400;
@@ -390,8 +400,15 @@ a {
   border: 1px solid #eeeeee;
   border-top: none;
 }
-
+.cont-work-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .cont-work-title {
+  margin-top: 0;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -416,14 +433,13 @@ a {
 /* Контент */
 .cont-work-list {
   display: flex;
-  text-align: center;
-  justify-content: space-around;
 }
 
 .card-set {
   display: flex;
   flex-wrap: wrap;
   margin: calc(-1 * var(--indent) / 2);
+  gap: 30px;
 }
 
 .card-set-item {
